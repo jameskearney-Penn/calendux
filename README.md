@@ -36,7 +36,7 @@ Calendux is a Bash Script based calendar/notification system designed to provide
 5. More information here
 - https://github.com/insanum/gcalcli
 
-### Running
+### Running Calendux
 - Calendux is run by running the bash script calendux.sh
 `\calendux.sh`
 - Press change user to enter in google calendar API information to start using Calendux
