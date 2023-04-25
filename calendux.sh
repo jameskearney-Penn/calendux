@@ -7,17 +7,20 @@
 ####################################
 # not logged in main menu
 
+#Add event to google calendar
 function add_event() {
   gcalcli add
   printf "The event was added\n"
 }
 
+#Search google calendar events
 function search_events() {
   printf "Type in an event to search\n"
   read search
   gcalcli search "$search"
 }
 
+#Search agenda between a specific start and end day
 function search_agenda() {
   printf "Type in a start day for the agenda\n"
   read start
@@ -26,6 +29,7 @@ function search_agenda() {
   gcalcli agenda $start $end
 }
 
+#Interactive menu to edit a specific event 
 function edit_event() {
   printf "Which event would you like to edit \n"
   read event
@@ -53,6 +57,8 @@ function show_month_agenda() {
   gcalcli agenda 1 30
 }
 
+#Switch Google Accounts
+#User must provide a client_id and client_secret from Google's API
 function switch_accounts() {
   printf "enter client_id: \n"
   read client_id
