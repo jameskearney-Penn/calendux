@@ -3,18 +3,35 @@ CIS1910 Linux/Unix-Final Project
 Calendux by James Kearney
 
 ## Introduction:
-Calendux is a Linux-based calendar/notification system designed to provide a customizable and efficient way to manage schedules and events. With the ability to connect to Google Calendar and provide a streamlined user interface, Calendux aims to simplify the process of managing and organizing events on Linux.
+Calendux is a Bash Script based calendar/notification system designed to provide a customizable and efficient way to manage schedules and events. With the ability to connect to Google Calendar and provide a streamlined user interface, Calendux aims to simplify the process of managing and organizing events.
 
 ## Project Goals:
-- Calendar application is able to be run through the shell: Calendux will be designed as a command-line application that can be easily run through the Linux shell
+- Calendar application is able to be run through the shell: Calendux will be designed as a command-line application that can be easily run through a bash script
 - Users can add/delete/edit tasks on the calendar: Calendux will allow users to easily add, delete, and edit tasks on the calendar, providing flexibility and control over their schedule.
 - Integration with Google Calendar: Calendux will utilize Google's API to connect with Google Calendar, allowing users to load events from their Google Calendar directly into the application.
 - Full calendar view of months, weeks, and days: Calendux will provide a comprehensive calendar view that allows users to see their events for months, weeks, and days at a glance, providing a clear overview of their schedule.
 - List of activities for certain days: Calendux will provide a feature to display a list of activities for specific days, making it easy for users to view their events for a particular day in a concise and organized manner.
 
 ## How to Operate:
+### Getting API Token
+- Generating a Google API to run calendux
+1. Create a New Project within the Google developer console
+- Activate the "Create" button.
+2. Enable the Google Calendar API
+- Activate the "Enable" button.
+3. Create OAuth2 consent screen for an "UI /Desktop Application".
+- Fill out required App information section
+- Fill out required Developer contact information
+- Activate the "Save and continue" button.
+4. Create OAuth Client ID
+- Specify Application type: Desktop app.
+- Activate the "Create" button.
+- Grab your newly created Client ID (in the form "xxxxxxxxxxxxxxx.apps.googleusercontent.com") and Client Secret from the Credentials page.
+
+### Running
 - Calendux is run by running the bash script calendux.sh
 `\calendux.sh`
+- Press change user to enter in google calendar API information to start using APP
 - From here users are shown a main menu where they can pick one of 9 options<br/> 
 `Welcome to the Calendux James!`<br/> 
 `What would you like to do?`<br/> 
